@@ -1,0 +1,28 @@
+# Model weights — distributed separately, see weights/README.md.
+# The nnU-Net *.json config sidecars under weights/ ARE tracked.
+*.pth
+*.pt
+*.ckpt
+docker/weights/
+
+# Challenge data (CC BY-NC, obtain from the organizers) and training outputs
+data/
+runs/
+output/
+*.nii
+*.nii.gz
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.venv-*/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+*.swp
+.vscode/
+.idea/

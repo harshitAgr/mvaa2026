@@ -1,0 +1,28 @@
+{
+  "channel_names": {
+    "0": "US"
+  },
+  "labels": {
+    "background": 0,
+    "anterior": 1,
+    "posterior": 2
+  },
+  "numTraining": 175,
+  "file_ending": ".nii.gz",
+  "name": "Dataset505_MVAA_TEE_final",
+  "description": "MVAA 2026 Task 2 - 3D TEE mitral leaflet segmentation (anterior=1, posterior=2).",
+  "data_sources": {
+    "mvaa_train": {
+      "n": 105,
+      "origin": "organizer (MVAA 2026, CC BY-NC)"
+    },
+    "mvseg_val": {
+      "n": 30,
+      "origin": "external (MVSeg2023, CC BY-NC-ND 4.0)"
+    },
+    "mvseg_test": {
+      "n": 40,
+      "origin": "external (MVSeg2023, CC BY-NC-ND 4.0)"
+    }
+  }
+}
