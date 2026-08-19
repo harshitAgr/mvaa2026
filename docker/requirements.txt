@@ -1,0 +1,15 @@
+# Pinned to the exact known-good stack from the host venvs (both use torch 2.11.0+cu128).
+# torch/torchvision are installed separately in the Dockerfile from the cu128 index.
+nnunetv2==2.7.0
+dynamic-network-architectures==0.4.3
+acvl-utils==0.2.6
+batchgenerators==0.25.2
+batchgeneratorsv2==0.3.2
+SimpleITK==2.5.5
+segmentation-models-pytorch==0.5.0
+monai==1.5.2
+nibabel==5.4.2
+scipy==1.17.1
+scikit-image==0.26.0
+numpy==2.4.6
+pillow==12.1.1

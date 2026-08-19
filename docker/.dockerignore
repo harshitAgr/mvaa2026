@@ -1,0 +1,12 @@
+README.md
+*.log
+output_test/
+__pycache__/
+**/__pycache__/
+*.pyc
+# Checkpoints for Task 3 variants that are not part of the deployed ensemble. Excluding them
+# keeps their absence from the runtime image independently auditable, rather than relying only
+# on an unset selector.
+weights/t3/segformer_best.pt
+weights/t3/segformer_epoch070.pt
+weights/t3/pretrained_model_fp16_state.pt

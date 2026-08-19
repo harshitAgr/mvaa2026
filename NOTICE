@@ -1,0 +1,57 @@
+MVAA 2026 challenge entry
+Copyright 2026 Harshit Agrawal / AIATELLA Oy.
+
+This product includes software developed by the above.
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+================================================================================
+SCOPE OF THE APACHE-2.0 GRANT
+================================================================================
+
+The Apache-2.0 licence in LICENSE covers ONLY the files authored by us. The
+following vendored files are third-party works, are NOT licensed by us, and are
+NOT covered by that grant. They are included here to satisfy the challenge's
+code-release requirement and to make our submission reproducible.
+
+1. Organizer baseline  --  baseline/task3/ and docker/code/baseline/task3/
+   Source: https://github.com/db0725/MVAA, commit 25274d6 (directory task3/)
+
+   - dataset.py, train.py, utils.py
+       Byte-identical to upstream. Copyright remains with the MVAA 2026
+       organizers. Upstream publishes NO LICENSE file, so no licence terms are
+       stated for these files and we assert none. They are redistributed here
+       only because the challenge's Participation Rules require entrants to
+       release their code, and our Task 3 trainers import them. Anyone wishing
+       to reuse them should obtain terms from the upstream authors.
+
+   - model_factory.py
+       Upstream file with our modifications. Our modifications are Apache-2.0;
+       the underlying file is subject to the paragraph above.
+
+   - surgenet_adapter.py
+       Authored by us. Apache-2.0.
+
+   - generate_task3_predictions.py is deliberately NOT redistributed.
+
+2. SurgeNet / MetaFormer  --  third_party/surgenet/ and
+                              docker/code/third_party/surgenet/
+   Source: https://github.com/timjaspers0801/surgenet, commit 54831cf
+
+   - metaformer.py, LICENSE.txt
+       Byte-identical to upstream. MIT, Copyright (c) 2025 Cris Claessens
+       (see third_party/surgenet/LICENSE.txt). The file itself carries an
+       Apache-2.0 header because upstream adapted it from sail-sg/metaformer
+       (Copyright 2022 Garena Online Private Limited); upstream's copy of that
+       header is already truncated and we reproduce it unchanged rather than
+       edit a third-party file.
+
+================================================================================
+MODEL WEIGHTS AND DATA
+================================================================================
+
+No model weights and no challenge data are distributed in this repository.
+
+Weights trained by this code are non-commercial: the MVAA 2026 data is CC BY-NC,
+and the Task 3 encoder initializer (SurgeNetDINOv2) is CC BY-NC-SA 4.0.
+Task 2 additionally involves CC BY-NC-ND 4.0 data. See weights/README.md and
+TRAINING.md before distributing any trained artifact.
